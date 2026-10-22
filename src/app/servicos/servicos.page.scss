@@ -43,13 +43,13 @@ ion-content {
     }
 
     h2 {
-        font-weight: 900;
-        font-size: 16px;
-        text-transform: uppercase;
-        font-family: Impact, 'Arial Black', sans-serif;
-        /* Fonte grossa simulando o design */
-        letter-spacing: 1px;
-    }
+    font-family: Impact, 'Arial Black', sans-serif;
+    font-weight: normal; /* Evita que a fonte Impact fique duplicada/borrada */
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /* Afasta as letras para facilitar a leitura */
+    margin: 0 0 5px 0;
+  }
 
     p {
         color: #AAAAAA;
