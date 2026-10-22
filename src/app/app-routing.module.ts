@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'cadastro',
+    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
+  },
+  {
+    path: 'servicos',
+    loadChildren: () => import('./servicos/servicos.module').then( m => m.ServicosPageModule)
+  },
+  {
+    path: 'agendamento',
+    loadChildren: () => import('./agendamento/agendamento.module').then( m => m.AgendamentoPageModule)
+  },
+  {
+    path: 'gerenciar-horarios',
+    loadChildren: () => import('./gerenciar-horarios/gerenciar-horarios.module').then( m => m.GerenciarHorariosPageModule)
+  },
 ];
 
 @NgModule({

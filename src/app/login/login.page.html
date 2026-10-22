@@ -1,0 +1,44 @@
+<ion-content class="ion-padding">
+  <!-- Cabeçalho -->
+  <div class="header-logo">
+    <h1>BARBEARIA VIP 👑</h1>
+  </div>
+
+  <h2 class="title-entrar">Entrar</h2>
+
+  <!-- Campos de Formulário -->
+  <ion-item lines="full" class="input-item">
+    <ion-icon name="at-outline" slot="start" color="warning"></ion-icon>
+    <ion-input placeholder="Digite seu email" type="email"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full" class="input-item">
+    <ion-icon name="lock-closed-outline" slot="start" color="warning"></ion-icon>
+    <ion-input placeholder="Digite sua senha" type="password"></ion-input>
+  </ion-item>
+
+  <!-- Link de Esqueci a Senha -->
+  <div class="esqueceu-senha">
+    <p>Esqueceu a senha ?</p>
+  </div>
+
+  <!-- Botões -->
+  <ion-button expand="block" class="btn-dourado">
+    <ion-icon name="cut" slot="start"></ion-icon>
+    Acessar
+  </ion-button>
+
+  <div class="divisor">
+    <p>OU</p>
+  </div>
+
+  <ion-button expand="block" class="btn-google">
+    <ion-icon name="logo-google" slot="start"></ion-icon>
+    ENTRAR COM GOOGLE
+  </ion-button>
+
+  <!-- Rodapé -->
+  <div class="rodape">
+    <p>Ainda não possui uma conta? <span class="link-cadastro" routerLink="/cadastro">cadastre-se</span></p>
+  </div>
+</ion-content>

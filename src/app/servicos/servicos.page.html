@@ -1,0 +1,83 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="header-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/cadastro" icon="arrow-back-outline" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Serviços</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  
+  <!-- Serviço 1: Selecionado -->
+  <div class="servico-card selecionado">
+    <ion-item lines="none" class="servico-item">
+      <ion-thumbnail slot="start">
+        <img src="../../assets/icon/favicon.png" alt="logo" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>LUZES</h2>
+        <p>R$ 30,00 • 45 MIN</p>
+      </ion-label>
+      <ion-icon name="checkmark" slot="end" class="icon-check"></ion-icon>
+    </ion-item>
+  </div>
+
+  <!-- Serviço 2: Selecionado -->
+  <div class="servico-card selecionado">
+    <ion-item lines="none" class="servico-item">
+      <ion-thumbnail slot="start">
+        <img src="../../assets/icon/favicon.png" alt="logo" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>BARBA</h2>
+        <p>R$ 20,00 • 15 MIN</p>
+      </ion-label>
+      <ion-icon name="checkmark" slot="end" class="icon-check"></ion-icon>
+    </ion-item>
+  </div>
+
+  <!-- Serviço 3: Não Selecionado -->
+  <div class="servico-card">
+    <ion-item lines="none" class="servico-item">
+      <ion-thumbnail slot="start">
+        <img src="../../assets/icon/favicon.png" alt="logo" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>CORTE/BARBA</h2>
+        <p>R$ 60,00 • 45 MIN</p>
+      </ion-label>
+      <ion-icon name="add" slot="end" class="icon-add"></ion-icon>
+    </ion-item>
+  </div>
+
+  <!-- Serviço 4: Não Selecionado -->
+  <div class="servico-card">
+    <ion-item lines="none" class="servico-item">
+      <ion-thumbnail slot="start">
+        <img src="../../assets/icon/favicon.png" alt="logo" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>CORTE DEGRADÊ / FADE</h2>
+        <p>R$ 45,00 • 45 MIN</p>
+      </ion-label>
+      <ion-icon name="add" slot="end" class="icon-add"></ion-icon>
+    </ion-item>
+  </div>
+
+</ion-content>
+
+<!-- Rodapé Fixo -->
+<ion-footer class="ion-no-border">
+  <ion-button expand="block" class="btn-avancar">
+    Avançar
+  </ion-button>
+  <div class="footer-total">
+    <p>Total: R$ 50,00 • Tempo: 60 min</p>
+  </div>
+</ion-footer>

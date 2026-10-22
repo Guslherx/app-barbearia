@@ -1,0 +1,121 @@
+/* Fundo Geral */
+ion-content {
+    --background: #1A1A1D;
+}
+
+/* Cabeçalho */
+.header-toolbar {
+    --background: #1A1A1D;
+    --color: #D4AF37;
+
+    ion-title {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    ion-icon {
+        color: #888888;
+    }
+}
+
+/* Carrossel de Datas (Aproveitado do Agendamento) */
+.datas-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 0 20px 20px 20px;
+    scrollbar-width: none;
+}
+
+.datas-container::-webkit-scrollbar {
+    display: none;
+}
+
+.data-chip {
+    background-color: #E0E0E0;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.data-chip.selecionado {
+    background-color: #D4AF37;
+}
+
+/* Estilo da Lista e dos Cartões de Horário */
+.horarios-lista {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.horario-card {
+    background-color: #E0E0E0;
+    border: 3px solid #D4AF37;
+    border-radius: 15px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Informação da Esquerda (Hora e Ícone) */
+.horario-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000000;
+    font-weight: 900;
+    font-size: 18px;
+
+    ion-icon {
+        font-size: 24px;
+    }
+}
+
+/* Status da Direita (Disponível/Agendado) */
+.horario-status {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 14px;
+
+    /* Modificador para Disponível */
+    &.disponivel {
+        color: #1CA81C;
+        /* Cor Verde */
+
+        ion-icon {
+            color: #FF0000;
+            /* Cruz Vermelha */
+            font-size: 20px;
+            margin-left: 5px;
+        }
+    }
+
+    /* Modificador para Agendado */
+    &.agendado {
+        color: #FF0000;
+        /* Cor Vermelha */
+    }
+}
+
+/* Botão Flutuante (FAB) Dourado no canto */
+.fab-dourado {
+    --background: #D4AF37;
+    --color: #000000;
+    margin-bottom: 20px;
+    margin-right: 10px;
+
+    ion-icon {
+        font-size: 32px;
+    }
+}

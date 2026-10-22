@@ -1,0 +1,95 @@
+/* Fundo escuro */
+ion-content {
+    --background: #1A1A1D;
+}
+
+/* Cabeçalho */
+.header-toolbar {
+    --background: #1A1A1D;
+    --color: #D4AF37;
+
+    ion-title {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    ion-icon {
+        color: #888888;
+    }
+}
+
+/* Cartões de Serviço */
+.servico-card {
+    background-color: #262629;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #333333;
+
+    /* Classe para quando o item estiver selecionado */
+    &.selecionado {
+        border: 1px solid #D4AF37;
+    }
+}
+
+.servico-item {
+    --background: transparent;
+    --color: #FFFFFF;
+
+    ion-thumbnail {
+        --border-radius: 8px;
+        background: #1A1A1D;
+        padding: 5px;
+        border: 1px solid #D4AF37;
+    }
+
+    h2 {
+        font-weight: 900;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: Impact, 'Arial Black', sans-serif;
+        /* Fonte grossa simulando o design */
+        letter-spacing: 1px;
+    }
+
+    p {
+        color: #AAAAAA;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .icon-check,
+    .icon-add {
+        color: #FFFFFF;
+        font-size: 32px;
+    }
+}
+
+/* Rodapé */
+ion-footer {
+    background: #1A1A1D;
+}
+
+.btn-avancar {
+    --background: #62FF00;
+    /* Verde neon do Figma */
+    --color: #000000;
+    --border-radius: 0;
+    margin: 0;
+    height: 60px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: none;
+}
+
+.footer-total {
+    background-color: #262629;
+    padding: 15px;
+    text-align: center;
+
+    p {
+        color: #D4AF37;
+        margin: 0;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}

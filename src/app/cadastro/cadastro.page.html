@@ -1,0 +1,55 @@
+<ion-content class="ion-padding">
+  <!-- Cabeçalho -->
+  <div class="header-logo">
+    <h1>BARBEARIA VIP 👑</h1>
+  </div>
+
+  <h2 class="title-cadastro">Criar Conta 📝</h2>
+
+  <!-- Campos de Formulário sem emojis no placeholder -->
+  <div class="form-container">
+    <ion-item lines="full" class="input-item">
+      <ion-icon name="person" slot="start" color="warning"></ion-icon>
+      <ion-input placeholder="Digite seu Nome" type="text"></ion-input>
+      <span slot="end" class="emoji-indicator"></span>
+    </ion-item>
+
+    <ion-item lines="full" class="input-item">
+      <ion-icon name="call" slot="start" color="warning"></ion-icon>
+      <ion-input placeholder="WhatsApp/Telefone" type="tel"></ion-input>
+      <span slot="end" class="emoji-indicator"></span>
+    </ion-item>
+
+    <ion-item lines="full" class="input-item">
+      <ion-icon name="at-outline" slot="start" color="warning"></ion-icon>
+      <ion-input placeholder="Digite seu email" type="email"></ion-input>
+      <span slot="end" class="emoji-indicator"></span>
+    </ion-item>
+
+    <ion-item lines="full" class="input-item">
+      <ion-icon name="lock-closed-outline" slot="start" color="warning"></ion-icon>
+      <ion-input placeholder="Digite sua senha" type="password"></ion-input>
+      <span slot="end" class="emoji-indicator"></span>
+    </ion-item>
+  </div>
+
+  <!-- Botões -->
+  <ion-button expand="block" class="btn-dourado">
+    <ion-icon name="cut" slot="start"></ion-icon>
+    Cadastrar ✔️
+  </ion-button>
+
+  <div class="divisor">
+    <p>OU</p>
+  </div>
+
+  <ion-button expand="block" class="btn-google">
+    <ion-icon name="logo-google" slot="start"></ion-icon>
+    ENTRAR COM GOOGLE
+  </ion-button>
+
+  <!-- Rodapé -->
+  <div class="rodape">
+    <p>Já possui uma conta? <span class="link-login" routerLink="/login">Entrar 🚪</span></p>
+  </div>
+</ion-content>

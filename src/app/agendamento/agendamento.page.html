@@ -1,0 +1,62 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="header-toolbar">
+    <ion-buttons slot="start">
+      <!-- O botão de voltar leva para a tela de serviços -->
+      <ion-back-button defaultHref="/servicos" icon="arrow-back-outline" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Agendamento</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-vertical">
+
+  <!-- Card do Barbeiro em Destaque -->
+  <div class="barbeiro-banner">
+    <img src="../../assets/icon/favicon.png" alt="Tom Barbeiro" class="barbeiro-foto" />
+    <div class="barbeiro-info">
+      <h2>Tom - Barbeiro Oficial</h2>
+      <p>★ 4.9 (140 avaliações)</p>
+    </div>
+  </div>
+
+  <!-- Carrossel de Datas -->
+  <div class="datas-container">
+    <button class="data-chip selecionado">
+      <ion-icon name="checkmark"></ion-icon> Hoje (02/Set)
+    </button>
+    <button class="data-chip">Amanhã (03/Set)</button>
+    <button class="data-chip">Quinta (04/Set)</button>
+  </div>
+
+  <!-- Grade de Horários -->
+  <div class="horarios-grid">
+    <button class="horario-btn">09:00</button>
+    <button class="horario-btn">11:00</button>
+    <button class="horario-btn">14:00</button>
+    <button class="horario-btn selecionado">15:00</button>
+    <button class="horario-btn">16:00</button>
+    <button class="horario-btn">18:00</button>
+  </div>
+
+  <!-- Botão de Confirmação -->
+  <div class="btn-container">
+    <ion-button expand="block" class="btn-confirmar">
+      CONFIRMAR AGENDAMENTO
+      <ion-icon name="checkmark-circle" slot="end"></ion-icon>
+    </ion-button>
+  </div>
+
+</ion-content>
+
+<!-- Rodapé com Resumo do Serviço -->
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="footer-toolbar">
+    <ion-icon name="cart-outline" slot="start" class="icone-carrinho"></ion-icon>
+    <ion-title class="texto-carrinho">Luzes + Barba</ion-title>
+  </ion-toolbar>
+</ion-footer>

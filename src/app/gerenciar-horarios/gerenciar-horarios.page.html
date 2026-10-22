@@ -1,0 +1,97 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="header-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/agendamento" icon="arrow-back-outline" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Gerenciar Horarios</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-vertical">
+
+  <!-- Carrossel de Datas -->
+  <div class="datas-container">
+    <button class="data-chip selecionado">
+      <ion-icon name="checkmark"></ion-icon> Hoje (02/Set)
+    </button>
+    <button class="data-chip">Amanhã (03/Set)</button>
+    <button class="data-chip">Quinta (04/Set)</button>
+  </div>
+
+  <!-- Lista de Horários -->
+  <div class="horarios-lista">
+
+    <!-- Horário 1: Disponível -->
+    <div class="horario-card">
+      <div class="horario-info">
+        <ion-icon name="time"></ion-icon>
+        <span>09:00 - 10:00</span>
+      </div>
+      <div class="horario-status disponivel">
+        <span>disponivel</span>
+        <ion-icon name="close"></ion-icon>
+      </div>
+    </div>
+
+    <!-- Horário 2: Disponível -->
+    <div class="horario-card">
+      <div class="horario-info">
+        <ion-icon name="time"></ion-icon>
+        <span>11:00 - 12:00</span>
+      </div>
+      <div class="horario-status disponivel">
+        <span>disponivel</span>
+        <ion-icon name="close"></ion-icon>
+      </div>
+    </div>
+
+    <!-- Horário 3: Disponível -->
+    <div class="horario-card">
+      <div class="horario-info">
+        <ion-icon name="time"></ion-icon>
+        <span>14:00 - 15:00</span>
+      </div>
+      <div class="horario-status disponivel">
+        <span>disponivel</span>
+        <ion-icon name="close"></ion-icon>
+      </div>
+    </div>
+
+    <!-- Horário 4: Agendado -->
+    <div class="horario-card">
+      <div class="horario-info">
+        <ion-icon name="person"></ion-icon>
+        <span>15:00 - 16:00</span>
+      </div>
+      <div class="horario-status agendado">
+        <span>agendado(Carlos)</span>
+      </div>
+    </div>
+
+    <!-- Horário 5: Disponível -->
+    <div class="horario-card">
+      <div class="horario-info">
+        <ion-icon name="time"></ion-icon>
+        <span>18:00-19:00</span>
+      </div>
+      <div class="horario-status disponivel">
+        <span>disponivel</span>
+        <ion-icon name="close"></ion-icon>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Botão Flutuante (Add Horário) -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button class="fab-dourado">
+      <ion-icon name="alarm"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

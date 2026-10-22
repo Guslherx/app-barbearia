@@ -1,0 +1,87 @@
+/* Fundo escuro da tela */
+ion-content {
+    --background: #1A1A1D;
+    /* Tom de cinza chumbo escuro similar ao seu Figma */
+}
+
+/* Título Principal */
+/* Título Principal */
+.header-logo h1 {
+    color: #D4AF37;
+    /* Dourado */
+    text-align: center;
+    font-weight: 900;
+    font-size: 28px;
+    margin-top: 130px;
+    /* Aumentamos de 60px para 130px para descer tudo */
+}
+
+/* Subtítulo Entrar */
+.title-entrar {
+    color: #D4AF37;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 60px;
+    /* Aumentamos um pouco aqui também */
+    margin-bottom: 30px;
+}
+
+/* Configuração das linhas dos inputs */
+.input-item {
+    --background: transparent;
+    --color: #FFFFFF;
+    --border-color: #555555;
+    /* Linha sutil embaixo do input */
+    margin-bottom: 10px;
+}
+
+ion-input {
+    --placeholder-color: #888888;
+}
+
+/* Textos menores */
+.esqueceu-senha p {
+    color: #888888;
+    text-align: right;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.divisor p {
+    color: #888888;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Botões */
+.btn-dourado {
+    --background: #D4AF37;
+    --color: #000000;
+    --border-radius: 25px;
+    font-weight: bold;
+    height: 50px;
+}
+
+.btn-google {
+    --background: #E0E0E0;
+    --color: #000000;
+    --border-radius: 25px;
+    font-weight: bold;
+    height: 50px;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    margin-top: 50px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.link-cadastro {
+    color: #D4AF37;
+    text-decoration: underline;
+    font-weight: bold;
+}
